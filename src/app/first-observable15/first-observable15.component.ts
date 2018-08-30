@@ -3,6 +3,19 @@ import {Observable} from 'rxjs';
 import {skip, take} from 'rxjs/operators';
 import {pipe} from 'rxjs';
 
+/**
+ * 1.  Цель: создать Observable, который будет выдавать значение каждые 1,5 секунды, при этом, необходимо пропустить первые два значения
+ *     и прекратить выполнение через 5 значений. После окончания передачи значений должно быть выведено в консоль complete
+ *     Таким образом в консоль будет выведено:
+ *     2
+ *     3
+ *     4
+ *     5
+ *     6
+ *     Complete
+ */
+
+
 interface ObserverType {
   next: (value) => void;
   complete: () => void;
