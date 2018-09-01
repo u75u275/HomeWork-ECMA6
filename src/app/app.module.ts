@@ -6,13 +6,15 @@ import { FirstObservable15Component } from './first-observable15/first-observabl
 import { SecondErrorGeneratorComponent } from './second-error-generator/second-error-generator.component';
 import {RouterModule} from '@angular/router';
 import {routes} from './app.routes';
+import { Hw19InOut2Component } from './hw19-in-out2/hw19-in-out2.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstObservable15Component,
-    SecondErrorGeneratorComponent
+    SecondErrorGeneratorComponent,
+    Hw19InOut2Component
   ],
   imports: [
     BrowserModule,
